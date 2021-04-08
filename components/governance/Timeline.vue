@@ -97,4 +97,15 @@ export default {
   font-size: 12px;
   color: var(--dim);
 }
+
+@media (max-width: 768px) {
+  .timeline {
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
 </style>

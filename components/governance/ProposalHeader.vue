@@ -11,7 +11,7 @@
         </div>
 
         <div class="buttons">
-          <CopyButton :value="currentRoute" />
+          <CopyButton class="copy-button" :value="currentRoute" />
           <Button
             v-if="status.value === governanceStatusEnum.DEPOSITING"
             id="deposit-btn"
@@ -233,6 +233,12 @@ h2 {
 
   .page-links li {
     padding: 2rem 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .copy-button {
+    position: absolute;
+    top: 201px;
   }
 }
 </style>
