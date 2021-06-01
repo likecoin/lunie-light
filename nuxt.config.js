@@ -11,7 +11,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Lunie 3',
+    title: 'LikeCoin - Lunie 3',
     htmlAttrs: {
       lang: 'en',
     },
