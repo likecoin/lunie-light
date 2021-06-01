@@ -8,7 +8,10 @@ export default {
   generate: {
     fallback: true,
   },
-
+  // hash based routing
+  router: {
+    mode: 'hash',
+  },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'LikeCoin - Lunie 3',
@@ -69,5 +72,13 @@ export default {
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    extend (config, { isDev, isClient }) {
+      if (!isDev) {
+        // relative links, please.
+        config.output.publicPath = './_nuxt/'
+      }
+      return config;
+    }
+  }
 }
