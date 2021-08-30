@@ -1,13 +1,13 @@
 export default {
   id: 'likecoin-chain-sheungwan', // DEPRECATE, only used for Lunie extension, NOT CHAIN ID
-  name: 'LikeCoin chain',
+  name: 'LikeCoin chain (SheungWan)',
   description:
     'LikeCoin is a decentralized publishing infrastructure. It provides a comprehensive metadata framework to facilitate content registration, licensing, and monetization for all media types.',
   logo: `logo.svg`,
   website: 'https://like.co',
-  siteURL: 'https://stake.like.co',
-  apiURL: 'https://mainnet-node.like.co', // use `npx lcp --proxyUrl http://34.123.30.100:1317`
-  rpcURL: 'ws://mainnet-node.like.co:26657',
+  siteURL: 'https://likecoin-chain-sheungwan.netlify.app',
+  apiURL: 'https://sheungwan-node.like.co', // use `npx lcp --proxyUrl http://34.123.30.100:1317`
+  rpcURL: 'https://sheungwan-node.like.co/rpc/',
   authcoreURL: 'https://authcore.like.co',
   stakingWalletURL: 'https://stake.like.co',
   stakingDenom: 'LIKE',
